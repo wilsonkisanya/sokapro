@@ -1,0 +1,1071 @@
+/*---------- RESET ----------*/
+html,
+body {
+    height: auto;
+}
+body {
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    background-color: #f5f8fa;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+body, select, input {
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, div,span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, 
+center,dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+article, aside, footer, header,
+hgroup, nav, section, figure, figcaption {
+    display: block;
+    margin: 0;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+textarea {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+input[type="submit"],
+input[type="button"] {
+    -webkit-appearance: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+a {
+    transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.clearfloat {
+    zoom: 1;
+}
+
+.clearfloat:before,
+.clearfloat:after {
+    content: "";
+    display: table;
+}
+
+.clearfloat:after {
+    clear: both;
+}
+
+body p {
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    font-family: "Poppins", sans-serif;
+}
+
+/*---------------BACK TO TOP---------------*/
+
+
+#toTop {
+    transition: background-color 200ms linear;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+}
+
+/*--------- Main Style -------*/
+
+#sokapro {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.app-wrapper {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    max-width: 768px;
+    max-height: 110px;
+    float: left;
+    margin: 0 auto;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+.top-header {
+    background-color: #000000;
+    float: left;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 75px;
+    width: 100%;
+}
+
+.access-account a {
+    padding: 5px 10px;
+    font-size: 13px;
+    margin: 2px;
+}
+
+.login a {
+    color: #ffa809;
+    border: 2px solid #ffa809;
+}
+
+.register a {
+    background-color: #ffa809;
+    border: 2px solid #ffa809;
+    color: #202020;
+}
+
+.navbar {
+    margin-top: 1px;
+    background-color: #202020;
+    width: 100%;
+    float: left;
+    max-width: 768px;
+    display: inline;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.nav-menu a.nav-link {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 10px 10px;
+    font-weight: 600;
+}
+
+.nav-menu a.active-link {
+    color: #ffa809;
+}
+
+.page-footer {
+    background-color: #000000;
+    width: 100%;
+    float: left;
+    max-width: 768px;
+    font-size: 12px;
+    position: relative;
+}
+
+.footer-navigation li {
+    border-right: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.footer-navigation li:last-child {
+    border-right: 0;
+}
+
+.footer-navigation li a.nav-link {
+    padding: 2px 10px;
+    font-weight: 400;
+}
+
+.footer-navigation .nav-menu.company-policy li {
+    border: none;
+}
+
+.footer-navigation .nav-menu.company-policy li a.nav-link {
+    padding: 2px 5px;
+}
+
+.footer {
+    background-color: #ffa809;
+    width: 100%;
+    float: left;
+    max-width: 768px;
+    font-weight: 400;
+}
+
+.footer span,
+.footer span a {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#app-content {
+    padding-top: 130px;
+    width: 100%;
+    float: left;
+    max-width: 768px;
+}
+
+.betting-tips-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.page-tab {
+    width: 100%;
+}
+
+.tab {
+    display: block;
+}
+
+.tab a {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #202020;
+    color: #ffffff;
+}
+
+.tab.active-page-tab a {
+    border: 1px solid #ffa809;
+    background-color: #ffa809;
+    color: #202020;
+}
+
+.page-tab .tab-3 a {
+    width: 100%;
+    background-color: red;
+}
+
+.page-heading {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-flex;
+    font-weight: 600;
+    width: 100%;
+    float: left;
+}
+
+.displayed-league{
+    font-size: 12px;
+    text-transform: capitalize;
+    display: inline-flex;
+    font-weight: 400;
+    width: 100%;
+    float: left;
+}
+
+.tips-tab {
+    display: block;
+}
+
+.tips-tab a {
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    border: 1px solid #202020;
+    color: #202020;
+}
+
+.tips-tab.active-page-tab a {
+    background-color: #ffa809;
+    color: #202020;
+    border: none;
+}
+
+.betting-tip .d-flex {
+    padding-left: 0;
+}
+
+.date-and-time {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.date-and-time span {
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+.venue-and-referee {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.venue-and-referee span {
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+.league-and-venue {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.game-location {
+    font-size: 9px;
+    font-weight: normal;
+}
+
+.league-and-venue span {
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.home-team-and-away-team {
+    font-size: 11px;
+}
+
+.home-team-and-away-team span {
+    display: block;
+}
+
+.home-team-and-away-team span.team-logo {
+    font-size: 12px;
+    height: 20px;
+    width: 30px;
+    max-width: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.home-team-and-away-team img {
+    max-width: 30px;
+}
+
+.home-team-and-away-team .team-name {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.home-team-and-away-team .team-odds {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.our-pick {
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 15px;
+}
+
+.horizontal-mobile-ads-banner-320x50 {
+    width: 100%;
+}
+
+.horizontal-mobile-ads-banner-320x50 img {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.square-mobile-ads-banner-250x250 {
+    width: 100%;
+}
+
+.square-mobile-ads-banner-250x250 img {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.news-title {
+    font-weight: 600;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.betting-tip {
+    padding: 1em;
+    float: left;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.horizontal-mobile-ads-banner-320X50 {
+    max-width: 768px;
+}
+
+.horizontal-mobile-ads-banner-320X50 img {
+    max-width: 320px;
+}
+
+.our-packages .col-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+form label {
+    font-size: 12px !important;
+    margin-bottom: 5px;
+}
+
+.my-account-tabs a {
+    border: 1px solid #202020;
+    font-size: 10px;
+    color: #202020;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+    margin: 1px;
+}
+
+.my-account-tabs a.active-account {
+    border: 1px solid #ffa809;
+    background-color: #ffa809;
+    color: #202020;
+}
+
+.choose-amount-to-deposit .btn {
+    font-size: 12px;
+}
+
+.choose-amount-to-deposit button {
+    background-color: #d9dddc;
+    margin: 1px;
+}
+
+.choose-amount-to-deposit button.btn-warning {
+    background-color: #ffa809 !important;
+}
+
+.deposit-from-account {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    color: #373636;
+    font-weight: 600;
+}
+
+.withdraw-from-account {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    color: #373636;
+    font-weight: 600;
+}
+
+.provider-logo img {
+    max-width: 50px;
+}
+
+.amount-field p {
+    font-size: 11px;
+}
+
+.subscriptions {
+    font-size: 11px;
+}
+
+.subscriptions .text-left {
+    color: #373636;
+    font-weight: 600;
+}
+
+.subscriptions .subscription-status {
+    border-radius: 20px;
+}
+
+.active-status {
+    background: rgba(81, 164, 86, 0.4);
+}
+
+.expired-status {
+    background: rgba(245, 194, 68, 0.4);
+}
+
+.deposit-status {
+    background: rgba(81, 164, 86, 0.4);
+}
+
+.withdraw-status {
+    background: rgba(245, 194, 68, 0.4);
+}
+
+.payment-status {
+    background: rgba(78, 159, 181, 0.4);
+}
+
+.referral-wrapper {
+    width: 100%;
+    max-width: 768px;
+    float: left;
+}
+
+.summary-section .number-of-referral {
+    background: rgba(245, 194, 68, 0.4);
+}
+
+.statistics-tab {
+    width: 100%;
+    float: left;
+}
+
+.statistics-tab a.nav-link {
+    font-size: 9px;
+}
+
+.statistics-tab .nav-tabs .nav-link.active {
+    background-color: #ffa809 !important;
+    border-radius: 0;
+    color: #202020;
+    border-bottom: 0;
+}
+
+.statistics-tab .nav-tabs .nav-link {
+    background-color: #c4c4c4;
+    border-radius: 0;
+    margin: 0 1px;
+    color: #202020;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.table img {
+    max-width: 20px;
+}
+
+.company-logo-image {
+    float: left;
+    width: 20%;
+}
+
+.company-logo-image img {
+    max-width: 50px;
+}
+
+.company-name-details {
+    float: right;
+    width: 78%;
+}
+
+.mega-jackpot-bg {
+    background: rgba(78, 159, 181, 0.4);
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.weekly-jackpot-bg {
+    background: rgba(81, 164, 86, 0.4);
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.daily-jackpot-bg {
+    background: rgba(245, 194, 68, 0.4);
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.yellow-bg-opacity {
+    background: rgba(245, 194, 68, 0.4);
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+.sub-heading{font-size: 10px;}
+
+/* Style the tab */
+.how-to-bet----tab {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.how-to-bet----tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 12px;
+    border: 1px solid #202020;
+    font-weight: 600;
+}
+
+.how-to-bet----tab button:hover {
+    background-color: #ddd;
+}
+
+.how-to-bet----tab button.active {
+    background-color: #ffa809;
+    border: 1px solid #ffa809;
+    color: #202020;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px;
+    border: none;
+    border-top: none;
+}
+
+.card-text {
+    margin-bottom: 0.4em;
+}
+
+.news-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.our-packages {
+    width: 100%;
+    float: left;
+}
+
+
+.our-packages .card-header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-transform: capitalize;
+}
+
+.our-packages .btn.btn-sm {
+    border-radius: 0;
+}
+
+.my-account-tabs {
+    width: 100%;
+    float: left;
+}
+
+.form-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.league-standing-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.countries-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.country {
+    opacity: 0.5;
+}
+
+.country.active-league {
+    opacity: 1;
+}
+
+.country h6 {
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.country img {
+    max-width: 25px;
+}
+
+.game-outcome-results {
+    padding: 0px 5px;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.outcome-win {
+    background-color: #28a745;
+}
+
+.outcome-draw {
+    background-color: #6c757d;
+    padding: 0px 7px;
+}
+
+.outcome-lost {
+    background-color: #dc3545;
+    padding: 0px 0.75em;
+}
+
+.livescore-wrapper {
+    float: left;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.countdown-status {
+    background: rgba(81, 164, 86, 0.4);
+    padding: 6px 15px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.live-game {
+    position: relative;
+}
+
+.live-game-indicator {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.game-statistics-tab {
+    width: 100%;
+    float: left;
+}
+
+.game-statistics-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.game-statistics-tab button.active {
+    border-bottom: 3px solid #ffa809;
+    color: #202020;
+}
+
+.game-statistics-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.game-statistics{
+    width: 100%;
+    float: left;
+}
+
+.ads-wrapper img{
+    width: 100%;
+}
+
+.horizontal-mobile-ads-banner-320Ãƒâ€”50{
+    width: 100%;
+    text-align: center;
+}
+
+.horizontal-mobile-ads-banner-320Ãƒâ€”50 a{
+    display: inline-block;
+}
+
+.horizontal-mobile-ads-banner-320Ãƒâ€”50 img{
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.square-mobile-ads-banner-250Ãƒâ€”250{
+    width: 100%;
+    text-align: center;
+}
+
+.square-mobile-ads-banner-250Ãƒâ€”250 a{
+    display: inline-block;
+}
+
+.square-mobile-ads-banner-250Ãƒâ€”250 img{
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.teams-lineups li{
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.teams-lineups h6{
+    font-size: 10px;
+}
+
+.single-statistics-wrapper{
+    width: 100%;
+    background: #FFA809;
+    height:2px;
+    margin-top: 40px;
+    float: left;
+}
+
+.single-statistics{
+    
+    padding:10px;
+    position:relative;
+    top: -17px;
+}
+
+.stat-gained{
+   color: #202020;
+   font-size: 11px;
+}
+
+.number-of-stat-gained-bg {
+    background: #fff;
+    border-radius: 19px;
+    padding: 3px 10px;
+}
+
+.number-of-stat-gained-bg .stat-indicators{
+    background: rgba(78, 159, 181, 0.4);
+    border-radius: 19px;
+    font-size: 11px;
+    padding: 3px 10px;
+    color: #202020;
+}
+
+.number-of-gained-odds-bg{
+    background: rgba(78, 159, 181, 0.4);
+    border-radius: 19px;
+    font-size: 11px;
+    padding: 3px 10px;
+    color: #202020;
+}
+
+.client-odds{
+    font-size: 11px;
+}
+
+.client-odds a:hover{
+    text-decoration: none;
+}
+
+.client-logo img{ max-width: 50px;
+}
+
+.wallet-balance{
+    width: 100%;
+    float: left;
+}
+
+.error-image img{
+    max-width: 320px;
+}
+
+.live-game{ font-size: 10px;
+}
+
+.team-logo img{
+    max-width: 20px;
+}
+
+.live-game-details a{
+    display: inline-block;
+    width: 100%;
+    color: #DDDDDD;
+}
+
+.market-games {
+    display: inline-block;
+    padding: 3px 0;
+}
+
+.nicescroll-rails {
+    top: 110px !important;
+}
+
+.scrollmenu {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.horizontal-mobile-ads-banner-320×50 img{
+    max-width: 320px;
+}
+
+.square-mobile-ads-banner-250×250 img{
+    max-width: 250px;
+}
+
+
+/* ---------------Media Queries---------------------------- */
+
+@media (max-width: 480px) {
+    body p {
+        font-size: 12px;
+    }
+    header {
+        max-width: 480px;
+    }
+
+    .date-and-time {
+        font-size: 9px;
+    }
+
+    .league-and-venue {
+        font-size: 9px;
+    }
+
+    .home-team-and-away-team {
+        font-size: 9px;
+    }
+
+    .card-title {
+        font-size: 13px;
+    }
+    .league-and-venue span{ font-size: 8px;}
+}
+
+@media (max-width: 390px) {
+    .nav-menu a.nav-link {
+        font-size: 11px;
+    }
+
+    .date-and-time {
+        font-size: 8px;
+    }
+
+    .venue-and-referee {
+        font-size: 8px;
+    }
+
+    .league-and-venue {
+        font-size: 8px;
+    }
+
+    .home-team-and-away-team {
+        font-size: 8px;
+    }
+
+    .game-location {
+        font-size: 8px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .statistics-tab .nav-tabs .nav-link {
+        font-size: 0.58em;
+    }
+}
+
+@media (max-width: 360px) {
+    .my-account-tabs a {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 340px) {
+    .my-account-tabs a {
+        font-size: 7px;
+    }
+    .statistics-tab .nav-tabs .nav-link {
+        font-size: 0.5em;
+    }
+
+    .game-location {
+        font-size: 6px;
+    }
+}
