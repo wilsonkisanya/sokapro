@@ -61,29 +61,33 @@
                     </div>
 
                     <div id="navigation" class="navbar px-0">
-                        <div class="scrollmenu text-uppercase">
-                            <div class="market-games nav-menu">
-                                <a class="nav-link active-link" href="livescore.html">Livescore</a>
-                            </div>
+                        <div class="container scrollmenu">
+                            <div class="row">
+                                <div class="scrollmenu text-uppercase">
+                                    <div class="col-xs-2 nav-menu">
+                                        <a class="nav-link  active-link" href="livescore.html">Livescore</a>
+                                    </div>
 
-                            <div class="market-games nav-menu">
-                                <a class="nav-link" href="subscriptions-page.html">Premium Subscriptions</a>
-                            </div>
+                                    <div class="col-xs-2 nav-menu">
+                                        <a class="nav-link" href="subscriptions-page.html">Premium Subscriptions</a>
+                                    </div>
 
-                            <div class="market-games nav-menu">
-                                <a class="nav-link" href="index.html">Free Predictions</a>
-                            </div>
+                                    <div class="col-xs-2 nav-menu">
+                                        <a class="nav-link" href="index.html">Free Predictions</a>
+                                    </div>
 
-                            <div class="market-games nav-menu">
-                                <a class="nav-link" href="sports-news.html">Sports News</a>
-                            </div>
+                                    <div class="col-xs-2 nav-menu">
+                                        <a class="nav-link" href="sports-news.html">Sports News</a>
+                                    </div>
 
-                            <div class="market-games nav-menu">
-                                <a class="nav-link" href="how-to-bet.html">How to Bet</a>
-                            </div>
+                                    <div class="col-xs-2 nav-menu">
+                                        <a class="nav-link" href="how-to-bet.html">How to Bet</a>
+                                    </div>
 
-                            <div class="market-games nav-menu">
-                                <a class="nav-link" href="league-standing.html">League Standings</a>
+                                    <div class="col-xs-2 nav-menu">
+                                        <a class="nav-link" href="league-standing.html">League Standings</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -616,10 +620,16 @@
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
-        <script type="text/javascript" src="assets/js/horizontal.scroll.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.5.1/jquery.nicescroll.min.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
 
         <script type="text/javascript">
+            $( document ).ready(function() {
+                $('#datepicker').datepicker();
+
+            });
+
+        
             function openCity(evt, cityName) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");

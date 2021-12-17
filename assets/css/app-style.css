@@ -1,4 +1,4 @@
-/*---------- RESET ----------*/
+/*---------- Sokapro CSS RESET ----------*/
 html,
 body {
     height: auto;
@@ -300,6 +300,7 @@ header {
     width: 100%;
     float: left;
     max-width: 768px;
+    margin-bottom: 0 !important;
 }
 
 .betting-tips-wrapper {
@@ -409,7 +410,7 @@ header {
 }
 
 .game-location {
-    font-size: 9px;
+    font-size: 8px;
     font-weight: normal;
 }
 
@@ -441,7 +442,7 @@ header {
 
 .home-team-and-away-team .team-name {
     font-weight: 600;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .home-team-and-away-team .team-odds {
@@ -753,19 +754,36 @@ form label {
 .countries-wrapper {
     width: 100%;
     float: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .country {
     opacity: 0.5;
+    max-width: 60px;
+    width: 50px;
+    display: inline-block;
 }
 
+.country-flag{
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+
 .country.active-league {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .country h6 {
     font-size: 9px;
     font-weight: 600;
+    display: inline-block;
 }
 
 .country img {
@@ -972,13 +990,14 @@ form label {
 }
 
 .nicescroll-rails {
-    top: 110px !important;
+    top: 95px !important;
 }
 
 .scrollmenu {
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: scroll;
+    display: inline-flex;
 }
 
 .horizontal-mobile-ads-banner-320×50 img{

@@ -73,11 +73,11 @@
                                     </div>
 
                                     <div class="col-xs-2 nav-menu">
-                                        <a class="nav-link" href="index.html">Free Predictions</a>
+                                        <a class="nav-link active-link" href="index.html">Free Predictions</a>
                                     </div>
 
                                     <div class="col-xs-2 nav-menu">
-                                        <a class="nav-link active-link" href="sports-news.html">Sports News</a>
+                                        <a class="nav-link" href="sports-news.html">Sports News</a>
                                     </div>
 
                                     <div class="col-xs-2 nav-menu">
@@ -323,32 +323,35 @@
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.5.1/jquery.nicescroll.min.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
 
         <script type="text/javascript">
-        
+            $( document ).ready(function() {
+                $('#datepicker').datepicker();
 
-      // Carousel
-      $(".carousel-inner").show().carousel({
-          autoPlay: 5000, //Set AutoPlay to 3 seconds
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:2
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-      });
+            });
 
+            
 
-     
+            // Carousel
+            $(".carousel-inner").show().carousel({
+                autoPlay: 5000, //Set AutoPlay to 3 seconds
+                    loop:true,
+                    margin:10,
+                    nav:true,
+                    responsive:{
+                        0:{
+                            items:2
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:5
+                        }
+                    }
+            });
       
       </script>
     </body>
